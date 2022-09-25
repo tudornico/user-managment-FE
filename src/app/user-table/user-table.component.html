@@ -1,0 +1,52 @@
+<div class="top-page">
+<img src="/assets/confstarLogo.jpg" alt="logo" class="logoImage">
+</div>
+<div class="header">
+<mat-card class="filters-card">
+  <div>
+    <span class="text-label"> cautati dupa nume</span>
+    <mat-form-field appearance="outline" class="search-by-name">
+      <input
+      matInput
+      type="text"
+      name="filtru"
+      [(ngModel)]="filters"
+      >
+    </mat-form-field>
+  </div>
+</mat-card>
+</div>
+
+<mat-card class="user-card">
+  <div class="table-wrapper">
+    <table
+      #firstTable
+      #firstTableSort="matSort"
+      class="current-renters"
+      mat-table
+      matSort
+      >
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef class="name-column">
+          <span class="table-header">Nume</span>
+        </th>
+      </ng-container>
+      <ng-container matColumnDef="prenume">
+        <th mat-header-cell *matHeaderCellDef class="first-name-column">
+          <span class="table-header">Prenume</span>
+        </th>
+      </ng-container>
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matCellDef class="">
+          <span class="table-header">Email</span>
+        </th>
+      </ng-container>
+      <ng-container matColumnDef="pretTotal">
+        <th mat-header-cell *matCellDef class="">
+          <span class="table-header">Cheltuieli Totale</span>
+        </th>
+      </ng-container>
+    </table>
+  </div>
+
+</mat-card>
