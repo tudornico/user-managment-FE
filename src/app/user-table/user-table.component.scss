@@ -2,14 +2,27 @@
 body{
   padding: 20px 25px 75px 100px;
 }
-.top-page{
+.app-button{
   background-color: $newDataBlue;
+  font-size: 16px;
+  color: white;
+  width: 20%;
+  height:24%;
+  font-family: "Helvetica Neue";
+}
+.top-page{
+}
+.logoImageNewData{
+  padding-top: 10px;
+  float: left;
+  width:180px;
+  height:100px;
 }
 .logoImage {
   padding-top: 10px;
   float: left;
-  width:300px;
-  height:500px;
+  width:150px;
+  height:100px;
 }
 table{
   padding-left: 40%;
@@ -20,28 +33,69 @@ table{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: $newDataBlue;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.12),
+  0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  padding-left: 10%;
+  border: $newDataBlue;
 }
+.add-button{
 
+}
+.user-card-container{
+  padding-top:5%;
+  width:100%;
+  padding-left: 10%;
+
+}
+.search-container{
+  display: flex;
+  padding-top:5%;
+}
 .user-card {
-  height: 70%;
   overflow: auto;
-  margin: 24px 24px 0;
-  min-height: 50px;
+  margin: 1% 1% 0;
+  min-height: 70%;
   border-radius: 4px;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.12),
-  0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.2)
+  0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  width:80%;
+  background-color: white;
+  min-width: 80%;
+  padding-top:0;
+  align-content: center;
+}
+th,
+td{
+  text-align: center;
+  justify-content: center;
+}
+td{
+  max-width: 30px;
+}
+.table-commands{
+  display: block;
+}
+.search-by-name {
+  font-size: 20px;
+  color: $newDataBlue;
+  line-height:30px;
+  outline-width: thick;
+  float:left;
 
 }
-
-.search-by-name {
-  font-size: 16px;
-  color: black;
-  padding-top: 10%;
+th,td{
+  overflow: auto;
+  border-collapse: collapse;
+}
+table{
+  border-collapse: collapse;
 }
 .text-label{
-  font-size: 16px;
+  font-size: 20px;
   color: black;
+  line-height: 30px;
+  float:left;
+  padding-right: 10px;
 }
 .table-header {
   color: $newDataBlue;
@@ -49,24 +103,53 @@ table{
   font-size: 18px;
   text-align: center;
 }
+
 .header{
   margin-top:20px;
+  padding-left: 20%;
+}
+.menu-container{
+  display: flex;
+}
+.menu{
+  float: top;
+  background-color: white;
+  width:10%;
+  margin-right: 0;
+}
+
+.line-between{
+  color: $newDataBlue;
+  height:3px;
+  background-color: $newDataBlue;
+
+}
+.menu-button{
+  font-family: Arial;
+  color: $newDataBlue;
+  padding-top:5%;
+  font-size:30px;
 }
 .current-renters {
-  width: 100px;
-  align-content: center;
+  width: 100%;
+  height:100%;
+  border-collapse: collapse;
   display: table;
+  min-width: 60%;
 }
 
 td {
   border:1px solid $newDataBlue;
   text-align: center;
+  width: 40px;
+
 }
 
 .table-wrapper {
-  margin-top: 50px;
-}
-.name-column,
+  padding-left:5%;
+  padding-right: 5%;
+  min-height: 50%;
+  }
 .first-name-column
 {
   padding: 10% 10% 10% 10%;

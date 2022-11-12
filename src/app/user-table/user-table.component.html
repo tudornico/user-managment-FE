@@ -1,22 +1,46 @@
-<div class="top-page">
-<img src="/assets/confstarLogo.jpg" alt="logo" class="logoImage">
+<!--contract start date-->
+<!--contract end date-->
+<!--renegociate date-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="imgContainer">
+  <img src="assets/LOGONewData.gif" alt="logo" class="logoImageNewData">
 </div>
 <div class="header">
 <mat-card class="filters-card">
-  <div>
-    <span class="text-label"> cautati dupa nume</span>
-    <mat-form-field appearance="outline" class="search-by-name">
+  <div class="table-commands">
+    <span class="text-label"> cautati dupa nume: </span>
+    <mat-form-field appearance="outline" class="search-by-name" >
+      <div class="search-container">
       <input
       matInput
       type="text"
       name="filtru"
       [(ngModel)]="filters"
       >
+      <mat-icon (click)="onSearch()">
+        search
+      </mat-icon>
+      </div>
     </mat-form-field>
+    <div class="add-button">
+      <button class="app-button">
+        Adauga
+      </button>
+    </div>
   </div>
 </mat-card>
 </div>
+<div class="menu-container" >
 
+  <mat-card class="menu">
+    <a class="menu-button" >Camere</a>
+    <hr class="line-between">
+    <a class="menu-button">Rapoarte</a>
+    <hr class="line-between">
+    <a class="menu-button">Chiriasi</a>
+    <hr class="line-between">
+  </mat-card>
+<div class="user-card-container">
 <mat-card class="user-card">
   <div class="table-wrapper">
     <table
@@ -25,28 +49,24 @@
       class="current-renters"
       mat-table
       matSort
+      [dataSource]="ELEMENT_DATA"
       >
-      <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef class="name-column">
-          <span class="table-header">Nume</span>
-        </th>
+      <ng-container matColumnDef="Nume">
+        <th mat-header-cell *matHeaderCellDef> Nume</th>
+        <td mat-cell *matCellDef="let element"> {{element.name}}</td>
       </ng-container>
-      <ng-container matColumnDef="prenume">
-        <th mat-header-cell *matHeaderCellDef class="first-name-column">
-          <span class="table-header">Prenume</span>
-        </th>
+      <ng-container matColumnDef="data Start">
+        <th mat-header-cell *matHeaderCellDef> data Start </th>
+        <td mat-cell *matCellDef="let element">{{element.startDate}}</td>
       </ng-container>
-      <ng-container matColumnDef="email">
-        <th mat-header-cell *matCellDef class="">
-          <span class="table-header">Email</span>
-        </th>
+      <ng-container matColumnDef="data Final">
+        <th mat-header-cell *matHeaderCellDef>data Final</th>
+        <td mat-cell *matCellDef = "let element">{{element.endDate}}</td>
       </ng-container>
-      <ng-container matColumnDef="pretTotal">
-        <th mat-header-cell *matCellDef class="">
-          <span class="table-header">Cheltuieli Totale</span>
-        </th>
-      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
   </div>
-
 </mat-card>
+</div>
+</div>

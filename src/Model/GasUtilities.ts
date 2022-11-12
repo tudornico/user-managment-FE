@@ -1,4 +1,4 @@
-interface GasUtilities{
+export interface GasUtilities{
   id:number,
   volume: number,
 }
