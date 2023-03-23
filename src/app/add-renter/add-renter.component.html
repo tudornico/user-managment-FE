@@ -1,0 +1,33 @@
+
+<img src="assets/confstarLogo.jpg" alt="logo" class="logoImageNewData">
+<mat-card-title class="titlu"> Adaugati un Chirias</mat-card-title>
+
+<mat-form-field appearance="outline" class = "form-field">
+  <div class="label-input">
+    <mat-label> Nume</mat-label>
+    <input matInput type="text" name = "name" class="input-box">
+  </div>
+</mat-form-field>
+<mat-form-field appearance="outline" class = "form-field">
+  <div class = "label-input">
+  <mat-label>Email</mat-label>
+  <input type="text"
+         matInput
+         name="email"
+         class = "input-box"
+  >
+  </div>
+</mat-form-field>
+<mat-form-field appearance="outline" class = "form-field">
+  <div class = "label-input">
+    <mat-label>Role</mat-label>
+    <mat-select>
+      <mat-form-field appearance="outline" class = "form-field">
+      <mat-option value="Admin">Admin</mat-option>
+      <mat-option value="User">User</mat-option>
+      <mat-option value="Berteanu"> berteanu</mat-option>
+      </mat-form-field>
+    </mat-select>
+  </div>
+</mat-form-field>
+  <button mat-button [mat-dialog-close]="dialogRef" class="close-button"> Inchide</button>

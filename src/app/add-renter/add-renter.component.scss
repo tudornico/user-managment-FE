@@ -1,0 +1,40 @@
+@import "src/app/themes.scss";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.logoImageNewData{
+  justify-content: center;
+  height:35%;
+  width:35%;
+  justify-content: center;
+}
+.background{
+  background: white;
+
+}
+.form-field{
+  display: block;
+}
+.label-input{
+  padding-top:5%;
+  padding-bottom: 5%;
+  display: flex;
+}
+.titlu{
+  font-size: 25px;
+  color: #c4383c;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.close-button{
+  font-family: Arial, serif;
+  color: #c4383c;
+  padding-top:5%;
+  font-size:15px;
+  padding-left: 25%;
+  width:50%;
+}
+.input-box{
+  height:30px;
+  padding-left: 10px;
+}

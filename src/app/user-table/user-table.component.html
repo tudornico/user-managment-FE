@@ -1,11 +1,9 @@
-<!--contract start date-->
-<!--contract end date-->
-<!--renegociate date-->
+
+<body>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<div class="imgContainer">
-  <img src="assets/LOGONewData.gif" alt="logo" class="logoImageNewData">
-</div>
+
 <div class="header">
+  <img src="assets/confstarLogo.jpg" alt="logo" class="logoImageNewData">
 <mat-card class="filters-card">
   <div class="table-commands">
     <span class="text-label"> cautati dupa nume: </span>
@@ -23,7 +21,9 @@
       </div>
     </mat-form-field>
     <div class="add-button">
-      <button class="app-button">
+      <button class="app-button"
+      (click)="openDialog()"
+      >
         Adauga
       </button>
     </div>
@@ -33,12 +33,14 @@
 <div class="menu-container" >
 
   <mat-card class="menu">
-    <a class="menu-button" >Camere</a>
+    <nav>
+    <button mat-button [routerLink]="['/rooms']" class="menu-button" >Camere</button>
     <hr class="line-between">
-    <a class="menu-button">Rapoarte</a>
+    <button mat-button [routerLink]="['']" class="menu-button">Rapoarte</button>
     <hr class="line-between">
-    <a class="menu-button">Chiriasi</a>
+    <button mat-button class="menu-button">Chiriasi</button>
     <hr class="line-between">
+    </nav>
   </mat-card>
 <div class="user-card-container">
 <mat-card class="user-card">
@@ -70,3 +72,4 @@
 </mat-card>
 </div>
 </div>
+</body>

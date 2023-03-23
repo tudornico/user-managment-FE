@@ -1,0 +1,68 @@
+@import "src/app/themes.scss";
+.logoImageNewData{
+  padding-right: 5%;
+  float: left;
+  width:180px;
+  height:120px;
+  padding-top: 0.5%;
+}
+.menu-container{
+  display: flex;
+  padding-right:80%;
+  width:30%;
+}
+.menu{
+  float: top;
+  background-color: white;
+  width:10%;
+  margin-right: 0;
+}
+.menu-button{
+  font-family: Arial;
+  color: $newDataBlue;
+  padding-top:5%;
+  font-size:30px;
+}
+.title-container{
+  padding-bottom:28%;
+  padding-left: 30%;
+  height: 20%;
+  padding-top:5%;
+}
+.card-title{
+  font-family: Arial;
+  font-weight: bold;
+  justify-content: center;
+  font-size: 30px;
+  display: inline-block;
+}
+.firm-information{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.12),
+  0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  padding-left: 5%;
+  border: $newDataBlue;
+  padding-right: 10%;
+}
+.firm-information-container{
+  padding-left: 100%;
+  padding-right: 5% ;
+
+}
+.information-line{
+  padding-top:30%;
+  padding-bottom: 5%;
+  padding-right: 10%;
+  display: flex;
+}
+.text-info-left{
+  font-weight: bold;
+  padding-right: 10%;
+  display: compact;
+}
+.text-info-right{
+  font-weight: bold;
+  padding-left: 10%;
+}
