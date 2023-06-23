@@ -1,5 +1,5 @@
 import {Role} from "./Role";
-fasfasfasasfasf
+
 export interface User{
   id: number,
   firstName: string,
